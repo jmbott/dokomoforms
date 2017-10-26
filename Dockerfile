@@ -1,4 +1,4 @@
-FROM python:3.4
+FROM python:3.6
 WORKDIR /dokomo
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get update && apt-get install nodejs postgresql-client -y
