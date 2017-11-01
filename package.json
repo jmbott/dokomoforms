@@ -84,10 +84,7 @@
     "screenfull": "global:screenfull"
   },
   "jest": {
-    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
-    "testFileExtensions": [
-      "js"
-    ],
+    "transform": {".*": "<rootDir>/node_modules/babel-jest"},
     "moduleFileExtensions": [
       "js"
     ],
