@@ -21,8 +21,8 @@ before_script:
   - python3 -m flake8 .
   - psql -c 'create database doko;' -U postgres
   - head -c 24 /dev/urandom > cookie_secret
-  - nvm install stable
-  - npm install npm@5.4.x -g
+  - nvm install 8.x
+  - npm install npm -g
   - npm install
   - node_modules/gulp/bin/gulp.js dev-build
   - ./tests/python/selenium_webapp.py &>/dev/null &
