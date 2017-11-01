@@ -3,7 +3,7 @@ var React = require('react'),
     LittleButton = require('./baseComponents/LittleButton'),
     BigButton = require('./baseComponents/BigButton'),
     PhotoAPI = require('../api/PhotoAPI'),
-    uuid = require('node-uuid');
+    uuid = require('uuid');
 
 //XXX use this: navigator.vibrate(50);
 

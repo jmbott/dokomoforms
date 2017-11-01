@@ -1,6 +1,6 @@
 var React = require('react'),
     screenfull = require('screenfull'),
-    uuid = require('node-uuid'),
+    uuid = require('uuid'),
     PhotoAPI = require('../../api/PhotoAPI.js'),
     ps = require('../../../../common/js/pubsub'),
     auth = require('../../services/auth');

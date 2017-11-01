@@ -4,7 +4,7 @@ var env = process.env.NODE_ENV || 'production';
 var gulp = require('gulp'),
     gulpif = require('gulp-if'),
     uglify = require('gulp-uglify'),
-    minifyCss = require('gulp-minify-css'),
+    cleanCss = require('gulp-clean-css'),
     rename = require('gulp-rename'),
     source = require('vinyl-source-stream'),
     concat = require('gulp-concat'),
@@ -63,7 +63,7 @@ var path = {
         node_modules_path + '/lz-string/libs/lz-string.min.js',
         node_modules_path + '/pouchdb/dist/pouchdb.min.js',
         node_modules_path + '/pouchdb-upsert/dist/pouchdb.upsert.min.js',
-        node_modules_path + '/node-uuid/uuid.js',
+        node_modules_path + '/uuid/uuid.js',
         node_modules_path + '/screenfull/dist/screenfull.js'
     ],
     SURVEY_JS_APP_SRC: survey_src_path + '/js/**/*.js',
@@ -200,7 +200,7 @@ gulp.task('survey-less', function() {
             console.log(err.message);
             this.emit('end');
         })
-        .pipe(gulpif(env !== 'development', minifyCss()))
+        .pipe(gulpif(env !== 'development', cleanCss()))
         .pipe(gulp.dest(path.SURVEY_CSS_DIST));
 });
 
@@ -282,7 +282,7 @@ gulp.task('admin-less', function() {
             console.log(err.message);
             this.emit('end');
         })
-        .pipe(gulpif(env !== 'development', minifyCss()))
+        .pipe(gulpif(env !== 'development', cleanCss()))
         // .pipe(gulpif(env !== 'development', rename({
         //     extname: '.min.css'
         // })))
