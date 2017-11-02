@@ -60,7 +60,6 @@
     "mocha": "^4.0.1",
     "mocha-istanbul": "^0.3.0",
     "node-underscorify": "0.0.14",
-    "react-addons-test-utils": "^15.6.2",
     "react-test-renderer":"^15.6.2",
     "reactify": "^1.1.1",
     "should": "^13.1.3",
