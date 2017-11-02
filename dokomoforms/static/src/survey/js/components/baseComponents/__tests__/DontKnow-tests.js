@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TestUtils from 'react-dom/test-utils';
+import ReactTestUtils from 'react-dom/test-utils';
 
 // a noop function useful for passing into components that require it.
 var noop = () => {};
@@ -17,13 +17,13 @@ describe('DontKnow', () => {
         var callback = jest.genMockFunction();
 
         // Render a DontKnow in the document
-        var dontKnow = TestUtils.renderIntoDocument(
+        var dontKnow = ReactTestUtils.renderIntoDocument(
             <DontKnow checkBoxFunction={callback} />
         );
 
         // Simulate click on button
-        TestUtils.Simulate.click(
-            TestUtils.findRenderedDOMComponentWithTag(dontKnow, 'input')
+        ReactTestUtils.Simulate.click(
+            ReactTestUtils.findRenderedDOMComponentWithTag(dontKnow, 'input')
         );
 
         // Verify that the callback was called once.
@@ -32,24 +32,24 @@ describe('DontKnow', () => {
 
     it('is not checked by default', () => {
         // Render a DontKnow in the document
-        var dontKnow = TestUtils.renderIntoDocument(
+        var dontKnow = ReactTestUtils.renderIntoDocument(
             <DontKnow checkBoxFunction={noop} />
         );
 
         // Get the rendered element
-        var dontKnowNode = TestUtils.findRenderedDOMComponentWithTag(dontKnow, 'input');
+        var dontKnowNode = ReactTestUtils.findRenderedDOMComponentWithTag(dontKnow, 'input');
 
         expect(dontKnowNode.defaultChecked).toEqual(false);
     });
 
     it('is checked by default when checked property is present', () => {
         // Render a DontKnow in the document
-        var dontKnow = TestUtils.renderIntoDocument(
+        var dontKnow = ReactTestUtils.renderIntoDocument(
             <DontKnow checkBoxFunction={noop} checked={true} />
         );
 
         // Get the rendered element
-        var dontKnowNode = TestUtils.findRenderedDOMComponentWithTag(dontKnow, 'input');
+        var dontKnowNode = ReactTestUtils.findRenderedDOMComponentWithTag(dontKnow, 'input');
 
         expect(dontKnowNode.defaultChecked).toEqual(true);
     });
