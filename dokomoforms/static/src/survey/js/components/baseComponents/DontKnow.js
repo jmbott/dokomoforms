@@ -1,4 +1,5 @@
-var React = require('react');
+var React = require('react'),
+    createReactClass = require('create-react-class');
 
 /*
  * Don't know component
@@ -6,7 +7,7 @@ var React = require('react');
  * props:
  *  @checkBoxFunction: What to do on click event
  */
-module.exports = React.createClass({
+module.exports = createReactClass({
     render: function() {
         return (
             <div className='question__btn__other'>
@@ -22,4 +23,3 @@ module.exports = React.createClass({
         );
     }
 });
-

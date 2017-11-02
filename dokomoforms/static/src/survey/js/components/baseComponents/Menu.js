@@ -1,4 +1,5 @@
 var React = require('react'),
+    createReactClass = require('create-react-class'),
     screenfull = require('screenfull'),
     uuid = require('uuid'),
     PhotoAPI = require('../../api/PhotoAPI.js'),
@@ -15,7 +16,7 @@ var React = require('react'),
  * @db: active pouch db
  * @surveyID: active surveyID
  */
-module.exports = React.createClass({
+module.exports = createReactClass({
 
     componentWillMount: function() {
         console.log('=======> componentWillMount');
