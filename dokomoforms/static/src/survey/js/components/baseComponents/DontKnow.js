@@ -1,6 +1,6 @@
 var React = require('react'),
     createReactClass = require('create-react-class'),
-    PropTypes = require(prop-types);
+    PropTypes = require('prop-types');
 
 /*
  * Don't know component
