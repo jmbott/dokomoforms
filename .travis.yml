@@ -6,6 +6,9 @@ cache:
   directories:
     - $HOME/.cache/pip
     - node_modules
+sudo: required
+services:
+  - postgresql
 addons:
   postgresql: "9.6"
   firefox: "56.0"
