@@ -19,6 +19,7 @@ before_install:
   - gem install coveralls-lcov
 
 before_script:
+  - bash install-postgres-10.sh
   - python3 -m flake8 .
   - psql -c 'create database doko;' -U postgres
   - head -c 24 /dev/urandom > cookie_secret
