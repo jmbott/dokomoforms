@@ -26,7 +26,9 @@
     "ratchet": "https://github.com/twbs/ratchet/archive/v2.0.2.tar.gz",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "screenfull": "^3.3.0"
+    "screenfull": "^3.3.0",
+    "create-react-class": "^15.6.3",
+    "raf": "^3.4.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
