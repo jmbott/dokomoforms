@@ -178,8 +178,7 @@ module.exports = createReactClass({
                     <span
                         onClick={this.props.buttonFunction.bind(null, this.props.index)}
                         disabled={this.props.disabled}
-                        className='icon icon-close question__minus'>
-                    </span>
+                        className='icon icon-close question__minus' />
                     : null}
                 </input>
             </div>
