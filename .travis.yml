@@ -8,13 +8,14 @@ cache:
     - node_modules
 addons:
   postgresql: "9.6"
-  firefox: "54.0"
+  firefox: "56.0"
   apt:
     packages:
       - postgresql-9.6-postgis-2.3
 
 before_install:
-  - pip install coveralls flake8 coverage beautifulsoup4 py-dateutil pytz selenium
+  - pip install coveralls flake8 coverage beautifulsoup4 py-dateutil pytz
+  - pip install selenium cryptography jwt redis
   - gem install coveralls-lcov
 
 before_script:
