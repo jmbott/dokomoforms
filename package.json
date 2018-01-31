@@ -58,7 +58,7 @@
     "gulp-uglify": "^3.0.0",
     "istanbul": "^0.4.5",
     "jest-cli": "^22.1.4",
-    "jsdom": "^11.3.0",
+    "jsdom": "^11.6.2",
     "jshint": "^2.9.5",
     "mocha": "^4.0.1",
     "mocha-istanbul": "^0.3.0",
