@@ -22,9 +22,11 @@ module.exports = createReactClass({
     },
 
     showPreview: function() {
+        console.log('showPreview before: ', showPreview);
         this.setState({
             showPreview: true
         });
+        console.log('showPreview after: ', showPreview);
     },
 
     hidePreview: function() {
