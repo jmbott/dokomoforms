@@ -173,7 +173,7 @@ module.exports = createReactClass({
                     onChange={this.onChange}
                     defaultValue={this.props.initValue}
                     disabled={this.props.disabled}
-                >
+                />
                 {this.props.showMinus ?
                     <span
                         onClick={this.props.buttonFunction.bind(null, this.props.index)}
