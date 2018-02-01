@@ -55,7 +55,7 @@ describe('DontKnow', () => {
 
         console.log('dontKnowNode.defaultChecked: ', dontKnowNode.defaultChecked);
         console.log('dontKnowNode: ', dontKnowNode);
-        var dontK = React.findDOMNode(dontKnowNode);
+        var dontK = ReactDOM.findDOMNode(dontKnowNode);
         console.log('dontK.defaultChecked: ', dontK.defaultChecked);
         console.log('dontKnowNode.type: ', dontKnowNode.type);
         console.log('dontKnowNode.checkBoxFunction: ', dontKnowNode.checkBoxFunction);
