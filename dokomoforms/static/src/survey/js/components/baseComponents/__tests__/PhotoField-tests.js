@@ -23,7 +23,7 @@ describe('PhotoField', () => {
         // https://github.com/facebook/jest/issues/207
         // hack hack
         // https://www.npmjs.com/package/react-bound-fn
-        PhotoField.prototype.__reactAutoBindPairs.showPreview = jest.genMockFunction();
+        PhotoField.prototype.__reactAutoBindPairs.showPreview = jest.fn();
 
         var Photo = TestUtils.renderIntoDocument(
             <PhotoField />
