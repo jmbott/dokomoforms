@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react'
 
 /*
  * Big 'ol button
@@ -8,8 +8,7 @@ import React, {Component} from 'react';
  *  @buttonFunction: What to do on click events
  *  @text: Text of the button
  */
-export default class extends Component {
-module.exports = createReactClass({
+export default class {
     render() {
         var buttonClasses = 'btn btn-block navigate-right page_nav__next';
         if (this.props.type) {
