@@ -53,6 +53,9 @@ describe('DontKnow', () => {
         // Get the rendered element
         var dontKnowNode = TestUtils.findRenderedDOMComponentWithTag(dontKnow, 'input');
 
+        console.log('dontKnowNode.defaultChecked: ', dontKnowNode.defaultChecked);
+        console.log('dontKnowNode: ', dontKnowNode);
+
         expect(dontKnowNode.defaultChecked).toEqual(true);
     });
 });
