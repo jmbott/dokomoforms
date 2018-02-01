@@ -33,7 +33,7 @@ describe('PhotoField', () => {
             TestUtils.findRenderedDOMComponentWithClass(Photo, 'photo_container')
         );
 
-        expect(PhotoField.prototype.__reactAutoBindMap.showPreview).toBeCalled();
+        expect(PhotoField.prototype.__reactAutoBindPairs.showPreview).toBeCalled();
     });
 
     it('renders image tag when initValue passed', () => {
