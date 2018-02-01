@@ -55,6 +55,9 @@ describe('DontKnow', () => {
 
         console.log('dontKnowNode.defaultChecked: ', dontKnowNode.defaultChecked);
         console.log('dontKnowNode: ', dontKnowNode);
+        console.log('dontKnowNode.type: ', dontKnowNode.type);
+        console.log('dontKnowNode.checkBoxFunction: ', dontKnowNode.checkBoxFunction);
+        console.log('dontKnowNode.defaultChecke: ', dontKnowNode.defaultChecke);
 
         expect(dontKnowNode.defaultChecked).toEqual(true);
     });
