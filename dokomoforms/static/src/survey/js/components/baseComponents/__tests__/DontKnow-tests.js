@@ -47,7 +47,7 @@ describe('DontKnow', () => {
     it('is checked by default when checked property is present', () => {
         // Render a DontKnow in the document
         var dontKnow = TestUtils.renderIntoDocument(
-            <DontKnow checkBoxFunction={noop} checked={true} />
+            <DontKnow checked={true} checkBoxFunction={noop} />
         );
 
         // Get the rendered element
