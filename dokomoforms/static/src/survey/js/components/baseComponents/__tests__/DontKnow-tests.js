@@ -55,10 +55,10 @@ describe('DontKnow', () => {
 
         console.log('dontKnowNode.defaultChecked: ', dontKnowNode.defaultChecked);
         console.log('dontKnowNode: ', dontKnowNode);
+        console.log('dontKnowNode.memoizedProps: ', dontKnowNode.memoizedProps);
         var dontK = ReactDOM.findDOMNode(dontKnowNode);
-        console.log('dontK.memoizedProps.defaultChecked: ', dontK.memoizedProps.defaultChecked);
-        console.log('dontKnowNode.type: ', dontKnowNode.type);
-        
+        console.log('dontK: ', dontK);
+
         expect(dontKnowNode.defaultChecked).toEqual(true);
     });
 });
