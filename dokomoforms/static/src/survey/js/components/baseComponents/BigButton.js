@@ -1,5 +1,4 @@
-var React = require('react'),
-    createReactClass = require('create-react-class');
+import React, {Component} from 'react';
 
 /*
  * Big 'ol button
@@ -9,8 +8,9 @@ var React = require('react'),
  *  @buttonFunction: What to do on click events
  *  @text: Text of the button
  */
+export default class extends Component {
 module.exports = createReactClass({
-    render: function() {
+    render() {
         var buttonClasses = 'btn btn-block navigate-right page_nav__next';
         if (this.props.type) {
             buttonClasses += ' ' + this.props.type;
