@@ -33,6 +33,10 @@ describe('PhotoField', () => {
             TestUtils.findRenderedDOMComponentWithClass(Photo, 'photo_container')
         );
 
+        console.log('Photo: ', Photo);
+        console.log('PhotoField: ', PhotoField);
+        console.log('jest.fn(): ', jest.fn());
+
         expect(PhotoField.prototype.__reactAutoBindPairs.showPreview).toBeCalled();
     });
 
