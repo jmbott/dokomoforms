@@ -9,6 +9,7 @@ var React = require('react'),
  */
 module.exports = createReactClass({
     render: function() {
+        console.log('defaultChecked: ', this.props.checked);
         return (
             <div className='question__btn__other'>
                 <input
@@ -21,6 +22,5 @@ module.exports = createReactClass({
                 <label htmlFor='dont-know'>I don't know the answer</label>
             </div>
         );
-        console.log('defaultChecked: ', defaultChecked);
     }
 });
