@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import TestUtils from 'react-dom/test-utils';
 import PropTypes from 'prop-types';
 
+var TestUtils = require('react-dom/test-utils');
+
 // a noop function useful for passing into components that require it.
 var noop = () => {};
 
