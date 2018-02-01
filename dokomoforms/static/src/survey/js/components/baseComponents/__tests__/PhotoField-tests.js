@@ -21,7 +21,9 @@ describe('PhotoField', () => {
 
         // Hackity hack hack hack
         // https://github.com/facebook/jest/issues/207
-        PhotoField.prototype.__reactAutoBindMap.showPreview = jest.genMockFunction();
+        // hack hack
+        // https://www.npmjs.com/package/react-bound-fn
+        PhotoField.prototype.__reactAutoBindPairs.showPreview = jest.genMockFunction();
 
         var Photo = TestUtils.renderIntoDocument(
             <PhotoField />
