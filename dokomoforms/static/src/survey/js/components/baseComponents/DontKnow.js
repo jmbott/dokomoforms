@@ -21,5 +21,6 @@ module.exports = createReactClass({
                 <label htmlFor='dont-know'>I don't know the answer</label>
             </div>
         );
+        console.log('defaultChecked: ', defaultChecked);
     }
 });
