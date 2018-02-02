@@ -54,7 +54,8 @@ describe('DontKnow', () => {
         var dontKnowNode = TestUtils.findRenderedDOMComponentWithTag(dontKnow, 'input');
 
         console.log('dontKnowNode.defaultChecked: ', dontKnowNode.defaultChecked);
-        console.log('dontKnowNode: ', dontKnowNode);
+        console.log('Fix Me');
+        //console.log('dontKnowNode: ', dontKnowNode);
 
         // bypass, react fiber issue calling variable, set properly
         expect(true).toEqual(true);

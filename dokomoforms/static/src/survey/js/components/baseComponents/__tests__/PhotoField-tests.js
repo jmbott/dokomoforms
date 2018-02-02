@@ -33,6 +33,8 @@ describe('PhotoField', () => {
             TestUtils.findRenderedDOMComponentWithClass(Photo, 'photo_container')
         );
 
+        console.log('Fix Me');
+
         expect(PhotoField.prototype.showPreview).toBeCalled();
     });
 
