@@ -24,8 +24,6 @@ module.exports = createReactClass({
     showPreview: function() {
         this.setState({
             showPreview: true
-            console.log('showPreview set true');
-            console.log('showPreview: ', showPreview);
         });
     },
 
