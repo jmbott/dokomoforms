@@ -23,7 +23,7 @@ describe('PhotoField', () => {
         // https://github.com/facebook/jest/issues/207
         // hack hack
         // https://www.npmjs.com/package/react-bound-fn
-        PhotoField.prototype.__reactAutoBindPairs.showPreview = jest.fn();
+        PhotoField.prototype.showPreview = jest.fn();
 
         var Photo = TestUtils.renderIntoDocument(
             <PhotoField />
@@ -33,7 +33,7 @@ describe('PhotoField', () => {
             TestUtils.findRenderedDOMComponentWithClass(Photo, 'photo_container')
         );
 
-        expect(PhotoField.prototype.__reactAutoBindPairs.showPreview).toBeCalled();
+        expect(PhotoField.prototype.showPreview).toBeCalled();
     });
 
     it('renders image tag when initValue passed', () => {
