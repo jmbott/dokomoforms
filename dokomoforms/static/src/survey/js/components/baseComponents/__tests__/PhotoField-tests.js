@@ -34,6 +34,7 @@ describe('PhotoField', () => {
         );
 
         console.log('Fix Me');
+        console.log('PhotoField: ', PhotoField);
 
         expect(PhotoField.prototype.showPreview).toBeCalled();
     });
@@ -60,8 +61,6 @@ describe('PhotoField', () => {
 
         TestUtils.findRenderedComponentWithType(Photo, PhotoPreview);
     });
-
-
 
     it('hides PhotoPreview on thumbnail click', () => {
 
